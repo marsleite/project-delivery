@@ -1,14 +1,20 @@
 <template>
   <main id="login-page" :class="[styles.container]">
-    <div :class=[styles.banner]>
-      Left
-    </div>
+    <div :class=[styles.banner]></div>
 
     <div :class=[styles.inputs__container]>
-      Login
-      <LoginForm />
-    </div>
+      <router-link to="/">Voltar</router-link>
 
+      <LoginForm />
+      <h3>Ou</h3>
+      <h3>Entrar com Google</h3>
+
+      <h3>
+        Ainda não é membro?
+        <router-link to="/">Se cadastre</router-link>
+      </h3>
+
+    </div>
   </main>
 </template>
 
@@ -26,5 +32,8 @@ export default {
       styles,
     };
   },
+  // methods: {
+
+  // },
 };
 </script>
