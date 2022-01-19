@@ -1,6 +1,8 @@
 <template>
   <main id="login-page">
-    <form>
+    <form
+      :class="[styles.container]"
+    >
       Login
       <input
         id="email"
@@ -27,10 +29,13 @@
 </template>
 
 <script>
+import styles from '../styles/views/_Login.module.scss';
+
 export default {
   name: 'Login',
   data() {
     return {
+      styles,
       email: '',
       password: '',
     };
