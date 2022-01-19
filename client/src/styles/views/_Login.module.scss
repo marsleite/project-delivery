@@ -1,12 +1,39 @@
 @use '../mixins' as *;
+@use '../colors' as c;
+
+$right-section-width: 40%;
 
 .container {
   @include flex;
-  display: flex;
+  @include size(100vh, 100vw);
+  background: c.$bg-primary;  
+}
+
+.inputs__container {
+  @include flex;
+  @include size(100%, _);
+  background: c.$bg-primary;
+  flex: 3;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  background: #000;
+
+  form {
+    @include flex;
+    @include size(100%, _);
+    flex-direction: column;
+    gap: 10px;
+    
+    label {
+      @include flex(center, flex-start);
+      @include size;
+    }
+  }
+}
+
+.banner {
+  @include flex;
+  @include size(100%, _);
+  background: rgb(216, 216, 216);
+  flex: 1;
+  color: c.$text-primary;
+
 }
