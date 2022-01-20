@@ -29,25 +29,6 @@
   }
 }
 
-.options__container {
-  @include flex(center, space-between);
-  @include size(auto, 25rem);
-  flex-direction: column;
-
-}
-
-.btnGoogle {
-  border: 1px solid c.$gray-200 !important;
-  background: white !important;
-  color: c.$text-primary !important;
-
-  &:hover {
-    background: rgb(255, 53, 53) !important;
-    color: white!important;
-  }
-}
-
-
 .inputs__container {
   @include flex(flex-start, space-between);
   @include size(90vh, _);
@@ -96,7 +77,6 @@
   background: c.$gray-100;
   flex: 1;
   color: c.$text-primary;
-
 }
 
 .options {

@@ -1,20 +1,20 @@
 <template>
-  <main id="login-page" :class=[styles.container]>
+  <main id="register-page" :class=[styles.container]>
     <div :class=[styles.banner]></div>
 
     <div :class=[styles.inputs__container]>
       <router-link to="/">Voltar</router-link>
 
-      <LoginForm />
-      <!-- <LoginOptions /> -->
+      <RegisterForm />
+
       <div :class=[styles.options]>
         <h3>
-          Ainda não é membro?
-          <router-link to="/registrar">Crie sua conta!</router-link>
+          Já tem uma conta?
+          <router-link to="/entrar">Entrar</router-link>
         </h3>
         <h3>
           Deseja vender seus alimentos?
-          <router-link to="/">Registre-se</router-link>
+          <router-link to="/">Cadastre-se aqui</router-link>
         </h3>
       </div>
 
@@ -23,14 +23,13 @@
 </template>
 
 <script>
-import LoginForm from '@/components/Login/LoginForm.vue';
-import styles from '../styles/views/_Login.module.scss';
+import RegisterForm from '@/components/Register/RegisterForm.vue';
+import styles from '../styles/views/_Register.module.scss';
 
 export default {
-  name: 'Login',
+  name: 'Register',
   components: {
-    LoginForm,
-    // LoginOptions,
+    RegisterForm,
   },
   data() {
     return {
