@@ -1,16 +1,15 @@
+/* eslint-disable class-methods-use-this */
 import { PrismaClient } from '@prisma/client';
 import md5 from 'md5';
 
-export default class UserService {
-  constructor(private prisma: PrismaClient) {
-    this.prisma = prisma;
-  }
+const prisma = new PrismaClient();
 
-  async createUser(data: any): Promise<any> {
-    const { password, ...rest } = data;
-    const newUser = await this.prisma.user.create({
+export default class UserService {
+  async createUser(user: any): Promise<any> {
+    const { password, ...userData } = user;
+    const newUser = await prisma.user.create({
       data: {
-        ...rest,
+        ...userData,
         password: md5(password),
       },
     });
