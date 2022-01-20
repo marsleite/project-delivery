@@ -1,0 +1,9 @@
+@use '../mixins' as *;
+@use '../colors' as c;
+
+.container {
+  @include flex(flex-start);
+  
+  flex-direction: column;
+  gap: 0.2rem;
+}
