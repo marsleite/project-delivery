@@ -1,9 +1,7 @@
 <template>
   <div class="home">
-    <h1>Hello World!</h1>
     <router-link to="/entrar">Entrar</router-link>
     <router-link to="/registrar">Registrar</router-link>
-
   </div>
 </template>
 

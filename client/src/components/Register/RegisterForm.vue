@@ -28,20 +28,27 @@
     />
 
     <div :class=[styles.btn__container]>
-      <button id="btn-register" type="submit">Criar conta</button>
+      <Button id="btn-register" type="submit" title="Criar sua conta" />
+
       <span><hr /><h3>Ou</h3><hr /></span>
-      <LoginOptions />
+
+      <login-options>
+        <Button id="btn-google" title="Entrar com Google" />
+      </login-options>
+
     </div>
   </form>
 </template>
 
 <script>
+import Button from '@/components/Button.vue';
 import LoginOptions from '@/components/Login/LoginOptions.vue';
-import styles from '@/styles/components/_LoginForm.module.scss';
+import styles from '@/styles/components/LoginForm.module.scss';
 
 export default {
   name: 'LoginForm',
   components: {
+    Button,
     LoginOptions,
   },
   data() {

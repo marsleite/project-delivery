@@ -6,27 +6,6 @@
   @include size(100vh, 100vw);
   background: c.$bg-primary;
 
-  button {
-    @include flex;
-    @include size(2.8rem);
-    @include transition;
-    background: c.$btn;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    font: {
-      size: 0.9rem;
-      weight: 600;
-    };
-    font-family:  inherit !important;
-    cursor: pointer;
-    outline: none;
-    padding: 10px;
-
-    &:hover {
-      background: c.$btn-hover;
-    }
-  }
 }
 
 .options__container {
@@ -35,18 +14,6 @@
   flex-direction: column;
 
 }
-
-.btnGoogle {
-  border: 1px solid c.$gray-200 !important;
-  background: white !important;
-  color: c.$text-primary !important;
-
-  &:hover {
-    background: rgb(255, 53, 53) !important;
-    color: white!important;
-  }
-}
-
 
 .inputs__container {
   @include flex(flex-start, space-between);
@@ -96,12 +63,4 @@
   background: c.$gray-100;
   flex: 1;
   color: c.$text-primary;
-
-}
-
-.options {
-  @include flex(flex-start);
-  
-  flex-direction: column;
-  gap: 0.2rem;
 }

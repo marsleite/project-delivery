@@ -20,7 +20,7 @@
 
 <script>
 import RegisterForm from '@/components/Register/RegisterForm.vue';
-import styles from '../styles/views/_Register.module.scss';
+import styles from '../styles/views/Register.module.scss';
 
 export default {
   name: 'Register',

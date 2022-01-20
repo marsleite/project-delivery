@@ -1,0 +1,34 @@
+button {
+  @include flex;
+  @include size(2.8rem);
+  @include transition;
+
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font: {
+    family: inherit !important;
+    size: 0.9rem;
+    weight: 600;
+  };
+  outline: none;
+  padding: 10px;
+}
+
+#btn-login {
+  background: c.$btn;
+  
+  &:hover { background: c.$btn-hover; }
+}
+
+#btn-google {
+  background: transparent;
+  border: 1px solid c.$gray-200;
+  color: c.$text-secondary;
+
+  &:hover {
+    background: rgb(255, 53, 53);
+    color: white;
+  }
+}
