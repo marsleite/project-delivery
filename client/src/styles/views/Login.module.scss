@@ -18,7 +18,7 @@
 .inputs__container {
   @include flex(flex-start, space-between);
   @include size(90vh, _);
-  flex: 2.5;
+  flex: 4;
   flex-direction: column;
   padding-left: 7rem;
 
@@ -55,12 +55,4 @@
       color: c.$gray-400;
     }
   }
-}
-
-.banner {
-  @include flex;
-  @include size(100%, _);
-  background: c.$gray-100;
-  flex: 1;
-  color: c.$text-primary;
 }

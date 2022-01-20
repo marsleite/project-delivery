@@ -7,18 +7,21 @@
 
     <label for="email"><h3>Email</h3></label>
     <input id="email" type="email" v-model="email" placeholder="você@exemplo.com.br" />
+
     <label for="password">
       <h3>Senha</h3>
       <router-link to="/redefinir-senha">
         <h3>Esqueceu sua senha?</h3>
       </router-link>
     </label>
+
     <input
       id="password"
       type="password"
       v-model="password"
       placeholder="Por favor, informe sua senha"
     />
+
     <div :class=[styles.btn__container]>
       <Button id="btn-login" type="submit" title="Entrar" />
       <span><hr /><h3>Ou</h3><hr /></span>
@@ -26,6 +29,7 @@
       <login-options>
         <Button id="btn-google" title="Entrar com Google" />
       </login-options>
+
     </div>
   </form>
 </template>
@@ -34,10 +38,12 @@
 import LoginOptions from '@/components/Login/LoginOptions.vue';
 import Button from '@/components/Button.vue';
 import styles from '@/styles/components/LoginForm.module.scss';
+// import Logo from '../../../public/DeliveryLogo.svg';
 
 export default {
   name: 'LoginForm',
   components: {
+    // Logo,
     Button,
     LoginOptions,
   },

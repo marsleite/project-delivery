@@ -32,7 +32,7 @@
 .inputs__container {
   @include flex(flex-start, space-between);
   @include size(90vh, _);
-  flex: 2.5;
+  flex: 4;
   flex-direction: column;
   padding-left: 7rem;
 

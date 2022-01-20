@@ -1,0 +1,12 @@
+@use '../mixins' as *;
+@use '../colors' as c;
+
+.container {
+  @include flex(flex-end, flex-start);
+  @include size(100%, _);
+  
+  background: c.$gray-100;
+  color: c.$text-primary;
+  flex: 1;
+  padding: 20px;
+}

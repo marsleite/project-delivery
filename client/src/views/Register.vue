@@ -1,6 +1,6 @@
 <template>
   <main id="register-page" :class=[styles.container]>
-    <div :class=[styles.banner]></div>
+    <Banner />
 
     <div :class=[styles.inputs__container]>
       <router-link to="/">Voltar</router-link>
@@ -19,12 +19,14 @@
 </template>
 
 <script>
+import Banner from '@/components/Banner.vue';
 import RegisterForm from '@/components/Register/RegisterForm.vue';
 import styles from '../styles/views/Register.module.scss';
 
 export default {
   name: 'Register',
   components: {
+    Banner,
     RegisterForm,
   },
   data() {
