@@ -1,13 +1,12 @@
 <template>
-  <main id="login-page" :class="[styles.container]">
+  <main id="login-page" :class=[styles.container]>
     <div :class=[styles.banner]></div>
 
     <div :class=[styles.inputs__container]>
       <router-link to="/">Voltar</router-link>
 
       <LoginForm />
-      <h3>Ou</h3>
-      <h3>Entrar com Google</h3>
+      <!-- <LoginOptions /> -->
 
       <h3>
         Ainda não é membro?
@@ -26,14 +25,12 @@ export default {
   name: 'Login',
   components: {
     LoginForm,
+    // LoginOptions,
   },
   data() {
     return {
       styles,
     };
   },
-  // methods: {
-
-  // },
 };
 </script>

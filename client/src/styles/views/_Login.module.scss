@@ -1,13 +1,52 @@
 @use '../mixins' as *;
 @use '../colors' as c;
 
-$right-section-width: 40%;
-
 .container {
   @include flex;
   @include size(100vh, 100vw);
-  background: c.$bg-primary;  
+  background: c.$bg-primary;
+
+  button {
+    @include flex;
+    @include size(2.8rem);
+    @include transition;
+    background: c.$btn;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font: {
+      size: 0.9rem;
+      weight: 600;
+    };
+    font-family:  inherit !important;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+
+    &:hover {
+      background: c.$btn-hover;
+    }
+  }
 }
+
+.options__container {
+  @include flex(center, space-between);
+  @include size(auto, 25rem);
+  flex-direction: column;
+
+}
+
+.btnGoogle {
+  border: 1px solid c.$gray-200 !important;
+  background: white !important;
+  color: c.$text-primary !important;
+
+  &:hover {
+    background: rgb(255, 53, 53) !important;
+    color: white!important;
+  }
+}
+
 
 .inputs__container {
   @include flex(flex-start, space-between);
@@ -18,9 +57,10 @@ $right-section-width: 40%;
 
   form {
     @include flex(flex-start);
-    @include size(50%, 25rem);
+    @include size(auto, 25rem);
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 4rem;
 
     h1 {
       margin-bottom: 2rem;
@@ -46,26 +86,6 @@ $right-section-width: 40%;
 
     ::placeholder {
       color: c.$gray-400;
-    }
-
-    button {
-      @include flex;
-      @include size(2.8rem);
-      @include transition;
-      background: c.$btn;
-      border: none;
-      border-radius: 4px;
-      color: white;
-      font-family: inherit;
-      font-size: 0.9rem;
-      cursor: pointer;
-      margin-top: 10px;
-      outline: none;
-      padding: 10px;
-
-      &:hover {
-        background: c.$btn-hover;
-      }
     }
   }
 }

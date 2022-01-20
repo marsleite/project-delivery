@@ -19,15 +19,26 @@
       v-model="password"
       placeholder="Por favor, informe sua senha"
     />
-    <button id="btn-login" type="submit">Entrar</button>
+    <div :class=[styles.btn__container]>
+      <button id="btn-login" type="submit">Entrar</button>
+      <span><hr /><h3>Ou</h3><hr /></span>
+      <LoginOptions />
+    </div>
   </form>
 </template>
 
 <script>
+import LoginOptions from '@/components/Login/LoginOptions.vue';
+import styles from '@/styles/components/_LoginForm.module.scss';
+
 export default {
   name: 'LoginForm',
+  components: {
+    LoginOptions,
+  },
   data() {
     return {
+      styles,
       email: '',
       password: '',
     };

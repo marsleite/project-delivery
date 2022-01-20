@@ -1,0 +1,29 @@
+@use '../mixins' as *;
+@use '../colors' as c;
+
+.btn__container {
+  @include flexspaced;
+  @include size(10rem);
+  flex-direction: column;
+}
+
+span {
+  @include flex;
+  @include size;
+
+  h3 {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    width: 8rem;
+    color: c.$gray-400;
+  }
+
+  hr {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-top: 1px solid c.$gray-200;
+    padding-inline: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
