@@ -12,10 +12,6 @@
           Já tem uma conta?
           <router-link to="/entrar">Entrar</router-link>
         </h3>
-        <h3>
-          Deseja vender seus alimentos?
-          <router-link to="/">Cadastre-se aqui</router-link>
-        </h3>
       </div>
 
     </div>

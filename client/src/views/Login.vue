@@ -13,8 +13,8 @@
           <router-link to="/registrar">Crie sua conta!</router-link>
         </h3>
         <h3>
-          Deseja vender seus alimentos?
-          <router-link to="/">Registre-se</router-link>
+          Deseja anunciar seus produtos?
+          <router-link to="/">Registre-se aqui</router-link>
         </h3>
       </div>
 
