@@ -1,5 +1,13 @@
-test('testando os testes jest', () => {
-  const name = 'Marcelo';
+// class UserController {
+//   async createUser(user: any): Promise<void> {
+//     return user;
+//   }
+// }
 
-  expect(name).toEqual('Marcelo');
-});
+// describe('create user', async () => {
+//   const newUser = new UserController();
+
+//   const data = await newUser.createUser('user');
+
+//   expect(data).toBe({});
+// });
