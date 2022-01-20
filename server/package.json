@@ -12,7 +12,8 @@
   "dependencies": {
     "@prisma/client": "^3.8.1",
     "cors": "^2.8.5",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "md5": "^2.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
@@ -20,8 +21,10 @@
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.10",
     "@babel/preset-typescript": "^7.16.7",
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.4.0",
+    "@types/md5": "^2.3.1",
     "@types/node": "^17.0.10",
     "@typescript-eslint/eslint-plugin": "^5.9.2-alpha.27",
     "@typescript-eslint/parser": "^5.10.0",
