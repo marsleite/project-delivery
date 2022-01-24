@@ -13,8 +13,12 @@ const main = async () => {
 
   app.use(router);
 
+  app.get('/', (req, res) => {
+    res.send('Hello World!');
+  });
+
   app.listen(PORT, () => {
-    console.log(`Running on port ${PORT}`);
+    console.log(`Running on port server ${PORT}`);
   });
 };
 
