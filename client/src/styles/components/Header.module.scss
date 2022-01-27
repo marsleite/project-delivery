@@ -1,0 +1,8 @@
+@use '../mixins' as *;
+@use '../colors' as c;
+
+.mainHeader {
+  @include flex;
+  @include size(4rem);
+  background: #000;
+}
