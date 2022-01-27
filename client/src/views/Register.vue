@@ -1,20 +1,19 @@
 <template>
   <main id="register-page" :class=[styles.container]>
-    <Banner />
-
     <div :class=[styles.inputs__container]>
       <router-link to="/">Voltar</router-link>
 
       <RegisterForm />
 
       <div :class=[styles.options]>
-        <h3>
+        <img src="/DeliveryLogo.png" alt="Delivery Logo" height="30" />        <h3>
           Já tem uma conta?
           <router-link to="/entrar">Entrar</router-link>
         </h3>
       </div>
 
     </div>
+    <Banner />
   </main>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <div :class=[styles.container]>
-    <img src="/DeliveryLogo.png" alt="Delivery Logo" height="30" />
   </div>
 </template>
 
