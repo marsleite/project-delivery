@@ -1,0 +1,9 @@
+@use '../mixins' as *;
+@use '../colors' as c;
+
+.container {
+  @include flex;
+  @include size;
+
+  min-height: calc(100vh - c.$header-height);
+}

@@ -1,13 +1,14 @@
 <template>
   <main id="login-page" :class=[styles.container]>
-    <Banner />
     <div :class=[styles.inputs__container]>
       <div style="display: flex; flex-direction: column; align-items: flex-start;">
         <router-link to="/">Voltar</router-link>
+
       </div>
       <LoginForm />
       <LoginMenu />
     </div>
+    <Banner />
   </main>
 </template>
 

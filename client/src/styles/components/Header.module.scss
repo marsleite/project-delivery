@@ -1,0 +1,35 @@
+@use '../mixins' as *;
+@use '../colors' as c;
+
+.container {
+  @include flexspaced;
+  @include size(3rem);
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid c.$gray-200;
+  position: sticky;
+  padding-inline: 2rem;
+  
+  a {
+    color: black;
+  }
+
+  nav {
+    @include flex;
+    gap: 10px;
+  }
+
+  button {
+    @include size(2rem, 6rem);
+    background: c.$accent-main;
+    border-radius: 28px;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.logo {
+  @include flex;
+  gap: 5px;
+}

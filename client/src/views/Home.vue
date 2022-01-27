@@ -1,12 +1,18 @@
 <template>
-  <div class="home">
-    <router-link to="/entrar">Entrar</router-link>
-    <router-link to="/registrar">Registrar</router-link>
+  <div :class=[styles.container]>
+
   </div>
 </template>
 
 <script>
+import styles from '../styles/views/Home.module.scss';
+
 export default {
   name: 'Home',
+  data() {
+    return {
+      styles,
+    };
+  },
 };
 </script>

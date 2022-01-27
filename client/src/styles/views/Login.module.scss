@@ -5,22 +5,19 @@
   @include flex;
   @include size(100vh, 100vw);
   background: c.$bg-primary;
-
 }
 
 .options__container {
   @include flex(center, space-between);
   @include size(auto, 25rem);
   flex-direction: column;
-
 }
 
 .inputs__container {
   @include flex(flex-start, space-between);
-  @include size(90vh, _);
-  flex: 4;
+  @include size(90vh, 50vw);
   flex-direction: column;
-  padding-left: 7rem;
+  padding-left: 8.5rem;
 
   form {
     @include flex(flex-start);
