@@ -2,7 +2,7 @@
 @use '../colors' as c;
 
 .container {
-  @include flex(flex-end, flex-start);
+  @include flex(center, flex-end);
   @include size(100%, 50vw);
   
   background: c.$gray-100;
@@ -10,5 +10,11 @@
   background-size: cover;
   background-position: -21.5rem;
   color: c.$text-primary;
+  flex-direction: column;
   padding: 20px;
+  
+  h2, h3 {
+    color: white;
+    margin-bottom: 20px;
+  }
 }

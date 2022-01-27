@@ -1,6 +1,5 @@
 <template>
-  <div :class=[styles.container]>
-  </div>
+  <div :class=[styles.container] />
 </template>
 
 <script>

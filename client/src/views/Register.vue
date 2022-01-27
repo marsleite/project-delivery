@@ -6,7 +6,11 @@
       <RegisterForm />
 
       <div :class=[styles.options]>
-        <img src="/DeliveryLogo.png" alt="Delivery Logo" height="30" />        <h3>
+        <h3>
+          Ao criar sua conta, você concorda com nossos
+          <router-link to="/termos">termos de uso</router-link>
+        </h3>
+        <h3>
           Já tem uma conta?
           <router-link to="/entrar">Entrar</router-link>
         </h3>

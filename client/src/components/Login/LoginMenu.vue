@@ -1,7 +1,5 @@
 <template>
   <div :class="[styles.container]">
-    <img src="/DeliveryLogo.png" alt="Delivery Logo" height="30" />
-
     <h3>
       Ainda não é membro?
       <router-link to="/registrar">Crie sua conta!</router-link>
