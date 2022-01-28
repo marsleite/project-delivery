@@ -2,17 +2,26 @@
 import { PrismaClient } from '@prisma/client';
 import md5 from 'md5';
 
-const prisma = new PrismaClient();
+export class UserService {
+  prisma: any;
+  md5: any;
+  constructor() {
+    this.prisma = new PrismaClient();
+    this.md5 = md5;
+  }
 
-export default class UserService {
-  async createUser(user: any): Promise<any> {
-    const { password, ...userData } = user;
-    const newUser = await prisma.user.create({
-      data: {
-        ...userData,
-        password: md5(password),
+  async findByEmail(email: string) {
+    const userExists = await this.prisma.user.findUnique({
+      where: {
+        email,
       },
     });
-    return newUser;
+    if (!userExists) return false
+    return true;
+  }
+
+  async findAll() {
+    const users = await this.prisma.user.findMany();
+    return users;
   }
 }
